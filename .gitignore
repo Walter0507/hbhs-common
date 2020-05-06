@@ -1,0 +1,13 @@
+*/target
+**/target
+*/iml
+**/iml
+/.idea
+*.iml
+**.iml
+git.properties
+/.classpath
+/.project
+*/.settings
+**/.settings
+/executable_jar
