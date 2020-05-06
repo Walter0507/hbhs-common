@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<include resource="org/springframework/boot/logging/logback/base.xml" />
+	<logger name="com" level="DEBUG"><appender-ref ref="console" /></logger>
+	<logger name="org" level="WARN"><appender-ref ref="console" /></logger>
+
+	<property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %X{remoteAddr} %X{hostname} [%thread] %-5level %logger{50} %X{uuid} - %msg%n" />
+	<property name="CHARSET" value="utf8" />
+	<!-- console appender-->
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>${LOG_PATTERN}</pattern>
+			<charset>${CHARSET}</charset>
+		</encoder>
+	</appender>
+</configuration>
+ 
