@@ -41,7 +41,7 @@
         <lombok.version>1.18.8</lombok.version>
         <apollo.version>1.4.0</apollo.version>
         <javax.servlet.version>4.0.1</javax.servlet.version>
-        <fastjson.version>1.2.41</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <openfeign-core.verion>10.2.3</openfeign-core.verion>
     </properties>
 
